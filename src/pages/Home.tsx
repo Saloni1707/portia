@@ -5,6 +5,7 @@ import Projects from "@/components/sections/Projects";
 import Publications from "@/components/sections/Publications";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -25,13 +26,16 @@ export default function Home() {
           <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-4 sm:mb-0">
             [ ISSUE NO. 1 — VOL. 2026 ]
           </div>
-          <nav className="flex gap-4 md:gap-8 font-mono text-xs uppercase tracking-widest">
-            <a href="#about" className="hover:text-muted-foreground transition-colors">About</a>
-            <a href="#experience" className="hover:text-muted-foreground transition-colors">Experience</a>
-            <a href="#projects" className="hover:text-muted-foreground transition-colors">Projects</a>
-            <a href="#publications" className="hover:text-muted-foreground transition-colors">Research</a>
-            <a href="#contact" className="hover:text-muted-foreground transition-colors">Contact</a>
-          </nav>
+          <div className="flex items-center gap-4 md:gap-8">
+            <nav className="flex gap-4 md:gap-8 font-mono text-xs uppercase tracking-widest">
+              <a href="#about" className="hover:text-muted-foreground transition-colors">About</a>
+              <a href="#experience" className="hover:text-muted-foreground transition-colors">Experience</a>
+              <a href="#projects" className="hover:text-muted-foreground transition-colors">Projects</a>
+              <a href="#publications" className="hover:text-muted-foreground transition-colors">Research</a>
+              <a href="#contact" className="hover:text-muted-foreground transition-colors">Contact</a>
+            </nav>
+            <ThemeToggle />
+          </div>
         </header>
 
         <Hero />
